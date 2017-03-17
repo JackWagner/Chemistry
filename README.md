@@ -1,5 +1,4 @@
-# Chemistry
-3-Dimensional Gasoline Combustion Simulation and Analysis
+# 3-Dimensional Gasoline Combustion Simulation and Analysis
 
 Goal:
 
