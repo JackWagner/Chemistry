@@ -1,16 +1,21 @@
 #include <iostream>
 #include <string>
-
-class molecule {
- public:
+#include "system.h"
+using namespace std;
+class molecule : public coordinates {
   string speciesname;
-  short int velocityX;
-  short int velocityY;
-  short int velocityZ;
-  short int posX;
-  short int posY;
-  short int posZ;
+ public:
+ molecule(string, short unsigned int, short unsigned int,
+	  short unsigned int);
+  string name();
+  short int velocityX();
+  short int velocityY();
+  short int velocityZ();
+  void toString();
 };
+
+
+
 
 //either position is given as a variable (less memory allocation) or 
 //it is returned as a function of time (more processing)

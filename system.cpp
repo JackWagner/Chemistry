@@ -22,12 +22,23 @@ short unsigned int coordinates::z() {
   return Z;
 }
 
-int main() {
 
-  coordinates E(100,150,200);
-  cout << "x: " << E.x() << "\n";
-  cout << "y: " << E.y() << "\n";
-  cout << "z: " << E.z() << "\n";
-
-  return 0;
+system::system(short unsigned int x, short unsigned int y, 
+	       short unsigned int z) {
+  x_Axis = x;
+  y_Axis = y;
+  z_Axis = z;
 }
+
+short unsigned int system::xAxis() {
+  return x_Axis;
+}
+
+short unsigned int system::yAxis() {
+  return y_Axis;
+}
+
+short unsigned int system::zAxis() {
+  return z_Axis;
+}
+
