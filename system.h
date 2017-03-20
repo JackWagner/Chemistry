@@ -3,7 +3,7 @@
 
 using namespace std;
 
-class coordinates {
+class coordinates : public objCounter {
   
   short unsigned int X;
   short unsigned int Y;
@@ -30,3 +30,14 @@ class system {
   short unsigned int zAxis();
 
 };
+
+class objCounter {
+  
+  protected:
+    static unsigned long long int totalMolecules;
+  
+  public:
+    objCounter();
+    unsigned long long int total();
+  
+}
