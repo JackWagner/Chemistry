@@ -2,9 +2,19 @@
 #include "system.h"
 using namespace std;
 
+objCounter::totalMolecules = 0;
+
+objCounter::objCounter() {
+	totalMolecules++;	
+}
+
+
+long long unsigned int objCounter::total() {
+ return totalMolecules;
+}
 
 coordinates::coordinates(short unsigned int x, short unsigned int y, 
-			 short unsigned int z) {
+			 short unsigned int z) : objCounter() {
   X = x;
   Y = y;
   Z = z;
